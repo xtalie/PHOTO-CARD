@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 253, 253);
+}
+
+.title h2 {
+  padding: 15px 15px 15px 0;
+}
+
+.wrapper {
+  background-color: rgb(255, 253, 253);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 0 15px;
+  padding-bottom: 50px;
+}
+
+.cards {
+  width: 300px;
+  background-color: white;
+  border-radius: 5px;
+  border: 2px solid rgb(237, 235, 235);
+}
+
+.cards:hover {
+  box-shadow: 4px 4px 8px rgba(163, 161, 161, 0.3);
+}
+
+.images {
+  width: 100%;
+  max-width: 300px;
+  height: 150px;
+  border-radius: 5px 5px 0 0;
+}
+
+.cards > h3 {
+  text-align: center;
+  padding: 10px 5px;
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+}
+
+.loader-effect,
+.failed-effect {
+  background-color: transparent;
+  width: fit-content;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loading {
+  font-size: 30px;
+  padding: 15px;
+}
+
+.failed {
+  display: none;
+  font-size: 20px;
+  color: red;
+}
+
+.emoji {
+  font-size: 90px;
+  margin-bottom: 10px;
+  display: none;
+}
+
+@media (max-width: 1210px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 670px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .cards {
+    width: 500px;
+  }
+
+  .images {
+    width: 100%;
+    max-width: 500px;
+  }
+}

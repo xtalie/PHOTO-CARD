@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="photo-card.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="loader-effect">
+        <p class="loading" id="loading">loading...</p>
+      </div>
+
+      <div class="failed-effect">
+        <p class="emoji" id="emoji">&#128557;</p>
+        <p class="failed" id="failed">
+          Error has occurred with a code of: N-90 : This Error can either be due
+          to unstable internet connection or bad fetch URL
+        </p>
+      </div>
+
+      <div class="title" id="title">
+        <h2 class="card-number" id="cardNumber">(0) Products</h2>
+      </div>
+
+      <div class="wrapper" id="wrapper"></div>
+    </div>
+    <script src="photo-card.js"></script>
+  </body>
+</html>
